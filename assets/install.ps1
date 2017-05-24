@@ -1,4 +1,5 @@
 $InstallScript = @"
+from __future__ import print_function
 import os
 import sys
 import json
@@ -12,7 +13,7 @@ import ctypes
 from ctypes.wintypes import HWND, UINT, WPARAM, LPARAM, LPVOID
 from builtins import input
 
-try: 
+try:
     from urllib.request import urlopen
 except ImportError:
     from urllib import urlopen
